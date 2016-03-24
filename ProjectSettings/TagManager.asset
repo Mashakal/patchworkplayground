@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - JumpStamp
+  - isFilled
+  - BlankStamp
+  - Pattern
+  - Debug
+  - MovingPlatform
+  - DisallowStamps
+  - ShouldBeParent
+  - TrailingStamp
+  - MoveStamp
+  - Fallthrough
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - NotGround
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3949225133
+    locked: 0
+  - name: FillStamp
+    uniqueID: 3025506951
+    locked: 0
+  - name: Platforms
+    uniqueID: 3012719055
+    locked: 0
+  - name: JumpStamps
+    uniqueID: 3886868151
+    locked: 0
+  - name: MoveStamps
+    uniqueID: 1071292227
+    locked: 0
+  - name: Character
+    uniqueID: 1796917483
+    locked: 0
+  - name: Collectable
+    uniqueID: 2979206591
+    locked: 0

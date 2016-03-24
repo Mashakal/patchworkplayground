@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 1c1ccfeb523ed2544a0bf23cd48506ea
+timeCreated: 1458569122
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Addie_strip_Run_0
+    21300002: Addie_strip_Run_1
+    21300004: Addie_strip_Run_2
+    21300006: Addie_strip_Run_3
+    21300008: Addie_strip_Run_4
+    21300010: Addie_strip_Run_5
+    21300012: Addie_strip_Run_6
+    21300014: Addie_strip_Run_7
+    21300016: Addie_strip_Run_8
+    21300018: Addie_strip_Run_9
+    21300020: Addie_strip_Run_10
+    21300022: Addie_strip_Run_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 400
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Addie_strip_Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: -50}
+        - {x: 32.5, y: -63}
+        - {x: 49.5, y: -75}
+        - {x: 65.5, y: -77}
+        - {x: 65.5, y: 84}
+        - {x: 63.5, y: 85}
+        - {x: -11.5, y: 85}
+        - {x: -40.5, y: 74}
+        - {x: -47.5, y: 8}
+        - {x: -47.5, y: -73}
+        - {x: -24.5, y: -85}
+        - {x: -18.5, y: -79}
+        - {x: -19.5, y: -70}
+        - {x: -18.5, y: -73}
+        - {x: -18.5, y: -80}
+        - {x: -11.5, y: -90}
+        - {x: 11.5, y: -90}
+        - {x: 10.5, y: -84}
+        - {x: 7.5, y: -81}
+        - {x: 28.5, y: -59}
+      - - {x: -66.5, y: 24}
+        - {x: -63.5, y: 25}
+        - {x: -63.5, y: 28}
+        - {x: -66.5, y: 29}
+        - {x: -68.5, y: 27}
+    - name: Addie_strip_Run_1
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.6574402, y: 90}
+        - {x: -30.34256, y: 82}
+        - {x: -37.34256, y: 30}
+        - {x: -33.34256, y: 14}
+        - {x: -18.34256, y: 7}
+        - {x: -16.34256, y: 7}
+        - {x: -29.34256, y: 3}
+        - {x: -71.34256, y: -19}
+        - {x: -84.34256, y: -33}
+        - {x: -84.34256, y: -44}
+        - {x: -81.34256, y: -50}
+        - {x: -71.34256, y: -54}
+        - {x: -35.34256, y: -90}
+        - {x: 84.65744, y: -90}
+        - {x: 84.65744, y: 78}
+        - {x: 72.65744, y: 90}
+    - name: Addie_strip_Run_2
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.18512, y: 85}
+        - {x: -13.18512, y: 78}
+        - {x: -77.18512, y: 2}
+        - {x: -77.18512, y: -15}
+        - {x: -47.18512, y: -72}
+        - {x: 5.8148804, y: -74}
+        - {x: 77.81488, y: -74}
+        - {x: 79.81488, y: -68}
+        - {x: 79.81488, y: 85}
+      - - {x: 54.81488, y: 26}
+        - {x: 57.81488, y: 27}
+        - {x: 57.81488, y: 30}
+        - {x: 54.81488, y: 31}
+        - {x: 52.81488, y: 29}
+    - name: Addie_strip_Run_3
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.02768, y: -90}
+        - {x: -50.02768, y: -88}
+        - {x: -53.02768, y: -87}
+        - {x: -55.02768, y: -90}
+      - - {x: -9.027679, y: 74}
+        - {x: -59.02768, y: 19}
+        - {x: -59.02768, y: -10}
+        - {x: -43.02768, y: -27}
+        - {x: -31.02768, y: -31}
+        - {x: -18.02768, y: -35}
+        - {x: -26.02768, y: -33}
+        - {x: -38.02768, y: -29}
+        - {x: -46.02768, y: -60}
+        - {x: -4.0276794, y: -90}
+        - {x: 76.97232, y: -90}
+        - {x: 76.97232, y: 74}
+      - - {x: -64.02768, y: -18}
+        - {x: -62.02768, y: -20}
+        - {x: -59.02768, y: -19}
+        - {x: -59.02768, y: -16}
+        - {x: -61.02768, y: -14}
+        - {x: -64.02768, y: -15}
+    - name: Addie_strip_Run_4
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.62976, y: 60}
+        - {x: 40.62976, y: 72}
+        - {x: -21.37024, y: 72}
+        - {x: -53.37024, y: -10}
+        - {x: -53.37024, y: -90}
+        - {x: 58.62976, y: -90}
+        - {x: 72.62976, y: -12}
+        - {x: 72.62976, y: 5}
+        - {x: 70.62976, y: 11}
+    - name: Addie_strip_Run_5
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.21283, y: 81}
+        - {x: -22.21283, y: 37}
+        - {x: -55.21283, y: -11}
+        - {x: -55.21283, y: -32}
+        - {x: -53.21283, y: -39}
+        - {x: -38.21283, y: -59}
+        - {x: -10.21283, y: -80}
+        - {x: 4.7871704, y: -81}
+        - {x: 7.7871704, y: -80}
+        - {x: 10.78717, y: -77}
+        - {x: 7.7871704, y: -82}
+        - {x: 6.7871704, y: -88}
+        - {x: 8.78717, y: -90}
+        - {x: 51.78717, y: -90}
+        - {x: 60.78717, y: -47}
+        - {x: 60.78717, y: 63}
+        - {x: 40.78717, y: 81}
+    - name: Addie_strip_Run_6
+      rect:
+        serializedVersion: 2
+        x: 4932
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.94464, y: 41}
+        - {x: 38.94464, y: 39}
+        - {x: 38.94464, y: 37}
+        - {x: 42.94464, y: 65}
+        - {x: 33.94464, y: 85}
+        - {x: -34.05536, y: 85}
+        - {x: -46.05536, y: 84}
+        - {x: -46.05536, y: -75}
+        - {x: -35.05536, y: -85}
+        - {x: -20.055359, y: -81}
+        - {x: -17.055359, y: -78}
+        - {x: -17.055359, y: -71}
+        - {x: -16.055359, y: -81}
+        - {x: -13.055359, y: -90}
+        - {x: 24.944641, y: -90}
+        - {x: 66.94464, y: -82}
+        - {x: 66.94464, y: -14}
+        - {x: 44.94464, y: 40}
+    - name: Addie_strip_Run_7
+      rect:
+        serializedVersion: 2
+        x: 5754
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.39795, y: -90}
+        - {x: 83.60205, y: -90}
+        - {x: 83.60205, y: 24}
+        - {x: 61.60205, y: 90}
+        - {x: -20.39795, y: 90}
+        - {x: -26.39795, y: 88}
+        - {x: -85.39795, y: -33}
+      - - {x: -30.39795, y: 37}
+        - {x: -35.39795, y: 26}
+        - {x: -35.39795, y: 23}
+        - {x: -34.39795, y: 22}
+        - {x: -28.39795, y: 22}
+        - {x: -24.39795, y: 29}
+        - {x: -24.39795, y: 35}
+        - {x: -25.39795, y: 37}
+    - name: Addie_strip_Run_8
+      rect:
+        serializedVersion: 2
+        x: 6576
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.24048, y: 4}
+        - {x: -76.24048, y: -21}
+        - {x: -35.24048, y: -65}
+        - {x: 4.7595215, y: -75}
+        - {x: 80.75952, y: -75}
+        - {x: 80.75952, y: 86}
+        - {x: -12.2404785, y: 86}
+        - {x: -17.240479, y: 85}
+    - name: Addie_strip_Run_9
+      rect:
+        serializedVersion: 2
+        x: 7398
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.91699, y: 28}
+        - {x: 76.91699, y: 57}
+        - {x: 73.91699, y: 66}
+        - {x: 56.916992, y: 72}
+        - {x: 11.916992, y: 72}
+        - {x: -2.0830078, y: 69}
+        - {x: -59.083008, y: 37}
+        - {x: -59.083008, y: -12}
+        - {x: -43.083008, y: -29}
+        - {x: -32.083008, y: -34}
+        - {x: -26.083008, y: -34}
+        - {x: -33.083008, y: -34}
+        - {x: -36.083008, y: -35}
+        - {x: -44.083008, y: -54}
+        - {x: -45.083008, y: -58}
+        - {x: -39.083008, y: -67}
+        - {x: -18.083008, y: -71}
+        - {x: -10.083008, y: -66}
+        - {x: -1.0830078, y: -61}
+        - {x: 42.916992, y: -90}
+        - {x: 67.91699, y: -90}
+        - {x: 74.91699, y: -87}
+        - {x: 74.91699, y: -74}
+        - {x: 65.91699, y: -67}
+        - {x: 62.916992, y: -68}
+    - name: Addie_strip_Run_10
+      rect:
+        serializedVersion: 2
+        x: 8220
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.425659, y: 75}
+        - {x: -21.42566, y: 68}
+        - {x: -54.42566, y: 19}
+        - {x: -54.42566, y: -55}
+        - {x: -43.42566, y: -78}
+        - {x: -10.425659, y: -90}
+        - {x: 54.57434, y: -90}
+        - {x: 69.57434, y: -11}
+        - {x: 69.57434, y: 55}
+        - {x: 61.57434, y: 75}
+    - name: Addie_strip_Run_11
+      rect:
+        serializedVersion: 2
+        x: 9042
+        y: 0
+        width: 822
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.268188, y: 80}
+        - {x: -55.26819, y: 16}
+        - {x: -55.26819, y: -48}
+        - {x: -8.268188, y: -90}
+        - {x: 45.73181, y: -90}
+        - {x: 51.73181, y: -88}
+        - {x: 60.73181, y: -36}
+        - {x: 60.73181, y: 61}
+        - {x: 40.73181, y: 80}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
