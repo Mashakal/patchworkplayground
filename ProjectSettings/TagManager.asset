@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - JumpStamp
-  - isFilled
   - BlankStamp
   - Pattern
   - Debug
@@ -13,8 +12,8 @@ TagManager:
   - DisallowStamps
   - ShouldBeParent
   - TrailingStamp
-  - MoveStamp
   - Fallthrough
+  - MenuSelection
   layers:
   - Default
   - TransparentFX
@@ -72,4 +71,7 @@ TagManager:
     locked: 0
   - name: Collectable
     uniqueID: 2979206591
+    locked: 0
+  - name: UserInterface
+    uniqueID: 1257189073
     locked: 0

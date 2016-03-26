@@ -7,6 +7,7 @@ public class MovingStairs : MonoBehaviour {
     public static float stairMovementSpeed = 2f;
     private ArrayList childrenStairs = new ArrayList();
 
+    private GameController gameController;
 
     private class MovingStair 
     {
@@ -74,22 +75,18 @@ public class MovingStairs : MonoBehaviour {
             // Use the appropriate move vector based on current move direction.
             if (moveDirection == Direction.Down)
             {
-                //translateVector = Vector3.down;
                 translateVector += new Vector3(0, -pMoveAmount, 0);
             }
             else if (moveDirection == Direction.Up)
             {
-                //translateVector = Vector3.up;
                 translateVector += new Vector3(0, pMoveAmount, 0);
             }
             else if (moveDirection == Direction.Left)
             {
-                //translateVector = Vector3.left;
                 translateVector += new Vector3(-pMoveAmount, 0, 0);
             }
             else if (moveDirection == Direction.Right)
             {
-                //translateVector = Vector3.right;
                 translateVector += new Vector3(pMoveAmount, 0, 0);
             }
             else
@@ -103,7 +100,6 @@ public class MovingStairs : MonoBehaviour {
                 ChangeDirection();
             }
 
-            //Debug.Log("About to return: " + translateVector);
             return translateVector;
 
         }
@@ -120,8 +116,10 @@ public class MovingStairs : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Transform[] childrenTransforms = GetComponentsInChildren<Transform>();
+        // Obtain a reference to the game controller.
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
 
+        Transform[] childrenTransforms = GetComponentsInChildren<Transform>();
         int count = 0;
         int i;
         // Start at 1 to ignore (this) the parent's transform.
@@ -136,8 +134,8 @@ public class MovingStairs : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         foreach (MovingStair stair in childrenStairs)
         {
             stair.Move();
