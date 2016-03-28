@@ -14,7 +14,8 @@ public class FillPatternController : MonoBehaviour {
     private GameController gameController;    // A reference to the GameController script.
 
     // Properties.
-    public GameObject FillPattern { get { return fillPattern; } }
+    public GameObject FillPattern { get { return fillPattern; } set { fillPattern = value; } }
+    public GameObject[] AllPatterns { get { return allPatterns.ToArray(); } }
 
     // Use this for initialization
     void Start ()

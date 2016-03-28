@@ -11,6 +11,7 @@ public class HUDController : MonoBehaviour {
     private GameController gameController;
     private SpriteRenderer selectedFill;
     private GameObject pauseMenu;
+    private GameObject fillMenu;
 
     // Use this for initialization
     void Start ()
@@ -19,9 +20,11 @@ public class HUDController : MonoBehaviour {
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
         selectedFill = GameObject.Find("SelectedFillColor").GetComponent<SpriteRenderer>();
         pauseMenu = GameObject.Find("PauseMenu");
+        fillMenu = GameObject.Find("FillColorMenu");
 
         // Disable special GUI elements now that we have obtained a reference to them.
         pauseMenu.SetActive(false);
+        fillMenu.SetActive(false);
     }
 
 	
@@ -60,65 +63,17 @@ public class HUDController : MonoBehaviour {
     }
 
 
-    //public void ProcessUserInput(int vertical, int horizontal, bool enter)
-    //{
-    //    UnhighlightSelection();
-
-    //    // Look for changing of vertical selections.
-    //    if (1 == vertical)
-    //    {
-    //        selectedIndex = (selectedIndex + 1) % selections.Length;
-    //    }
-    //    else if (-1 == vertical)
-    //    {
-    //        selectedIndex -= 1;
-    //        if (selectedIndex < 0)
-    //        {
-    //            selectedIndex = selections.Length - 1;
-    //        }
-    //    }
-
-    //    // Look for a selection being made from the enter/return key being pressed.
-    //    if (enter)
-    //    {
-    //        ProcessSelection(selections[selectedIndex].name);
-    //    }
-
-    //    HighlightSelection();
-    //}
-
-
-    //private void ProcessSelection(string pSelectionName)
-    //{
-    //    switch (pSelectionName)
-    //    {
-    //        case "Resume": gameController.ChangePauseState(); break;
-    //    }
-    //}
-
-
     private void DisplayPauseGUI()
     {
-        pauseMenu.SetActive(true);
+        pauseMenu.GetComponent<PauseMenu>().TurnOn();
+        //pauseMenu.SetActive(true);
     }
-
-
-    //private void HighlightSelection()
-    //{
-    //    selections[selectedIndex].GetComponent<Text>().color = selectedItemColor;
-    //}
-
-
-    //private void UnhighlightSelection()
-    //{
-    //    selections[selectedIndex].GetComponent<Text>().color = defaultColor;
-    //    //Debug.Log(selections[selectedIndex].GetComponent<Text>().text);
-    //}
 
 
     private void DisplayPlayingGUI()
     {
         pauseMenu.SetActive(false);
+        //pauseMenu.GetComponent<PauseMenu>().TurnOff();
     }
 
 }

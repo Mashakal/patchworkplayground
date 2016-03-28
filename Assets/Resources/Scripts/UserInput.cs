@@ -40,7 +40,7 @@ public class UserInput : MonoBehaviour {
             gameController.ChangePauseState();
         }
 
-        if(GameController.GameState.Paused == gameController.state)
+        if (GameController.GameState.Paused == gameController.state)
         {
             GetPlayerPauseInput();
         }
@@ -81,7 +81,7 @@ public class UserInput : MonoBehaviour {
         // Look for a choice being made (enter)
         bool enter = Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(actionKey);
 
-        // Pass the inputs to the HUD controller.
+        // Pass the inputs to the pause controller.
         pauseController.ProcessUserInput(vert, hor, enter);
     }
 }
