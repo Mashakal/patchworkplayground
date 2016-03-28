@@ -11,7 +11,7 @@ public class UserInput : MonoBehaviour {
     // References.
     private PlayerController pController;
     private GameController gameController;
-    private HUDController hudController;
+    private PauseMenu pauseController;
     
     // Private variables.
     private bool jump;
@@ -21,7 +21,7 @@ public class UserInput : MonoBehaviour {
     {
         // Obtain the required references.
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
-        hudController = GameObject.Find("HUDCanvas").GetComponent<HUDController>();
+        pauseController = GameObject.Find("PauseMenu").GetComponent<PauseMenu>();
         pController = GetComponent<PlayerController>();
     }
 
@@ -82,6 +82,6 @@ public class UserInput : MonoBehaviour {
         bool enter = Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(actionKey);
 
         // Pass the inputs to the HUD controller.
-        hudController.ProcessUserInput(vert, hor, enter);
+        pauseController.ProcessUserInput(vert, hor, enter);
     }
 }
