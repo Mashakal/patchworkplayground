@@ -10,9 +10,6 @@ public class FillPatternController : MonoBehaviour {
     private List<GameObject> allPatterns;     // Holds every pattern the player has obtained.
     private GameObject fillPattern;           // The current pattern to be used for filling in stamps.
 
-    // References.
-    private GameController gameController;    // A reference to the GameController script.
-
     // Properties.
     public GameObject FillPattern { get { return fillPattern; } set { fillPattern = value; } }
     public GameObject[] AllPatterns { get { return allPatterns.ToArray(); } }
@@ -20,7 +17,6 @@ public class FillPatternController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
         allPatterns = new List<GameObject>();
     }
 

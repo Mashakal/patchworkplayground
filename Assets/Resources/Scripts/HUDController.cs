@@ -60,6 +60,7 @@ public class HUDController : MonoBehaviour {
     {
         // Update the fill pattern display color to reflect the change.
         selectedFill.color = newPattern.GetComponent<SpriteRenderer>().color;
+        fillPatternName = newPattern.name;
     }
 
 

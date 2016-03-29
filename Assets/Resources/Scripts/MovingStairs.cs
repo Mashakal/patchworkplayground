@@ -7,8 +7,6 @@ public class MovingStairs : MonoBehaviour {
     public static float stairMovementSpeed = 2f;
     private ArrayList childrenStairs = new ArrayList();
 
-    private GameController gameController;
-
     private class MovingStair 
     {
         private enum Direction
@@ -116,9 +114,6 @@ public class MovingStairs : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        // Obtain a reference to the game controller.
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
-
         Transform[] childrenTransforms = GetComponentsInChildren<Transform>();
         int count = 0;
         int i;
