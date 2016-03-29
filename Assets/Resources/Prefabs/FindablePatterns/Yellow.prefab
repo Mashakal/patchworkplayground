@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21243824}
   - 198: {fileID: 19838060}
   - 199: {fileID: 19999590}
-  - 114: {fileID: 11431648}
   - 61: {fileID: 6121162}
   m_Layer: 0
   m_Name: Yellow
@@ -27,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161720}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268346, w: 0.9238795}
-  m_LocalPosition: {x: -14.61, y: 8.08, z: 0}
+  m_LocalPosition: {x: 30.89, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,21 +45,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.75}
---- !u!114 &11431648
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0458c2f308973ee408f6fa87f3502943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveHorizontally: 1
-  moveVertically: 0
-  hDistance: 0.15
-  vDistance: 0
 --- !u!198 &19838060
 ParticleSystem:
   m_ObjectHideFlags: 1

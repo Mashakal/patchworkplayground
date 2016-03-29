@@ -15,9 +15,6 @@ public class GameController : MonoBehaviour
         Paused
     };
 
-
-    // Private variables.
-
     // References.
     public HUDController hudController;
     public FillPatternController patternController;
@@ -49,5 +46,4 @@ public class GameController : MonoBehaviour
             state = GameState.Paused;
         }
     }
-
 }

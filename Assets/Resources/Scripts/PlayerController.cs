@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     private bool isFacingRight;               // Whether or not the player is facing right.
     private bool isMoving = false;            // Whether or not the player is moving along the x-axis, for help rendering trailing stamps.
     private bool canStamp;                    // Whether or not the player can render stamps from moving and jumping.
+    private bool isInActiveGoal = false;      // Whether or not the player is within the goal and the goal is active.
     
     // References.
     private GameController gameController;    
@@ -109,10 +110,17 @@ public class PlayerController : MonoBehaviour {
             // Look for actions to take from an action key press.
             if (pIsActionPressed)
             {
+                // Check for a fill action.
                 if (gameController.patternController.blankStamp != null)
                 {
                     // Fill the stamp.
                     gameController.patternController.FillBlankStamp();
+                }
+
+                // Check for entering the goal, ending the level.
+                if (isInActiveGoal)
+                {
+                    Debug.Log("Ending the level.");
                 }
             }
         }
@@ -157,6 +165,14 @@ public class PlayerController : MonoBehaviour {
             transform.position = startPosition;
         }
 
+        // Check for having entered the goal.
+        if (other.name.Equals("Goal"))
+        {
+            if (other.GetComponent<Goal>().IsActive)
+            {
+                isInActiveGoal = true;
+            }
+        }
     }
 
 
@@ -173,6 +189,12 @@ public class PlayerController : MonoBehaviour {
         else if (other.tag.Equals("ShouldBeParent"))
         {
             transform.parent = null;
+        }
+
+        // Check for leaving an active goal.
+        if (other.name.Equals("Goal") && isInActiveGoal)
+        {
+            isInActiveGoal = false;
         }
     }
 }

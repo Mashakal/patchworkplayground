@@ -9,15 +9,18 @@ public class FillPatternController : MonoBehaviour {
     // Private variables.
     private List<GameObject> allPatterns;     // Holds every pattern the player has obtained.
     private GameObject fillPattern;           // The current pattern to be used for filling in stamps.
+    private int blankStampCount;
 
     // Properties.
     public GameObject FillPattern { get { return fillPattern; } set { fillPattern = value; } }
     public GameObject[] AllPatterns { get { return allPatterns.ToArray(); } }
+    public int BlankStampCount { get { return blankStampCount; } }
 
     // Use this for initialization
     void Start ()
     {
         allPatterns = new List<GameObject>();
+        blankStampCount = GameObject.FindGameObjectsWithTag("BlankStamp").Length;
     }
 
 
@@ -39,5 +42,6 @@ public class FillPatternController : MonoBehaviour {
     {
         blankStamp.GetComponent<SpriteRenderer>().color = fillPattern.GetComponent<SpriteRenderer>().color;
         blankStamp = null;
+        blankStampCount--;
     }
 }
