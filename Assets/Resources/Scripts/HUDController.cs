@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 
 public class HUDController : MonoBehaviour {
@@ -9,7 +10,7 @@ public class HUDController : MonoBehaviour {
 
     // References.
     private GameController gameController;
-    private SpriteRenderer selectedFill;
+    private Image selectedFill;
     private GameObject pauseMenu;
     private GameObject fillMenu;
 
@@ -18,7 +19,7 @@ public class HUDController : MonoBehaviour {
     {
         // Obtain references.
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
-        selectedFill = GameObject.Find("SelectedFillColor").GetComponent<SpriteRenderer>();
+        selectedFill = GameObject.Find("FillColor").GetComponent<Image>();
         pauseMenu = GameObject.Find("PauseMenu");
         fillMenu = GameObject.Find("FillColorMenu");
 
