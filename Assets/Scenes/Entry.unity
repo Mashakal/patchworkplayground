@@ -615,7 +615,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pre-beta prototype
+  m_Text: Pre-alpha prototype
 --- !u!222 &728408753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1567,7 +1567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.029411793, g: 0.026816634, b: 0.026816634, a: 0.097}
+  m_Color: {r: 0.029411793, g: 0.026816634, b: 0.026816634, a: 0.215}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
