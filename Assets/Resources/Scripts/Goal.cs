@@ -6,9 +6,7 @@ public class Goal: MonoBehaviour {
     // Inspector variables.
     public Color inactiveColor;
     public Color activeColor;
-
-    // Private variables.
-    private bool isActive = false;
+    public bool isActive = false;
 
     // References.
     private FillPatternController fillController;
@@ -20,6 +18,10 @@ public class Goal: MonoBehaviour {
 	void Start ()
     {
         fillController = GameObject.Find("PatternController").GetComponent<FillPatternController>();
+        if (isActive)
+        {
+            Activate();
+        }
     }
 	
 

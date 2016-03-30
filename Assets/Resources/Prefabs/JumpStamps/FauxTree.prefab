@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: -408099145
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d379bb3e195466c478bae42d4b36ae2b, type: 3}
-  m_Color: {r: 0.36277902, g: 0.634, b: 1, a: 1}
+  m_Color: {r: 0.06758219, g: 0.0734548, b: 0.9191176, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
@@ -79,7 +79,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Color.r
+      value: 0.06758219
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.g
+      value: 0.0734548
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.b
+      value: 0.9191176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189980}

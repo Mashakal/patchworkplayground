@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour {
                 // Check for entering the goal, ending the level.
                 if (isInActiveGoal)
                 {
-                    Debug.Log("Ending the level.");
+                    gameController.LoadLevel(2);
                 }
             }
         }
@@ -163,6 +163,11 @@ public class PlayerController : MonoBehaviour {
             rigidBody.velocity = new Vector2(0, 0f);
             // Respawn the character.
             transform.position = startPosition;
+        }
+        else if (other.tag.Equals("ActivateOnEnter"))
+        {
+            other.GetComponent<ActivateOnEnter>().Activate();
+            Debug.Log("Activating.");
         }
 
         // Check for having entered the goal.

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
         EndLevel,
         Paused
     };
+
+    // Private variables.
+    private int currentLevel = 0;
 
     // References.
     public HUDController hudController;
@@ -45,5 +48,21 @@ public class GameController : MonoBehaviour
             Time.timeScale = 0f;
             state = GameState.Paused;
         }
+    }
+
+
+    // Load the next level/scene.
+    public void LoadNextLevel()
+    {
+        currentLevel++;
+        SceneManager.LoadScene(currentLevel);
+    }
+
+
+    // Sets the current level to the argument passed in and loads that level.
+    public void LoadLevel(int pLevel)
+    {
+        currentLevel = pLevel;
+        SceneManager.LoadScene(currentLevel);
     }
 }
