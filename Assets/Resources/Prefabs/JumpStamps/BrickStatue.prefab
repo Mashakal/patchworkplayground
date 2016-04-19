@@ -1,40 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &139050
+--- !u!1 &186340
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 465820}
-  - 212: {fileID: 21261692}
-  - 61: {fileID: 6175036}
+  - 4: {fileID: 473766}
+  - 212: {fileID: 21250388}
+  - 61: {fileID: 6114498}
   m_Layer: 8
-  m_Name: GrassVineTree
+  m_Name: BrickStatue
   m_TagString: JumpStamp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &465820
+--- !u!4 &473766
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139050}
+  m_GameObject: {fileID: 186340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.596783, y: -9.041476, z: 0}
-  m_LocalScale: {x: 2.5, y: 4, z: 1}
+  m_LocalPosition: {x: 21.197771, y: -8.96, z: 0}
+  m_LocalScale: {x: 2.25, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6175036
+--- !u!61 &6114498
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139050}
+  m_GameObject: {fileID: 186340}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -43,12 +43,12 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
   m_Size: {x: 0.75, y: 1}
---- !u!212 &21261692
+--- !u!212 &21250388
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139050}
+  m_GameObject: {fileID: 186340}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -69,8 +69,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -408099145
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: db3ccaf2902ff2c4ca70b021e350307d, type: 3}
-  m_Color: {r: 0, g: 0.83823526, b: 0.14452335, a: 1}
+  m_Sprite: {fileID: 21300006, guid: 27c0896302409d74abbe7ff621a9027e, type: 3}
+  m_Color: {r: 0.76862746, g: 0.68235296, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
@@ -81,11 +81,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300002, guid: db3ccaf2902ff2c4ca70b021e350307d,
-        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 139050}
+  m_RootGameObject: {fileID: 186340}
   m_IsPrefabParent: 1
