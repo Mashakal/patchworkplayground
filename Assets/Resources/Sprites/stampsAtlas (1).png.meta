@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: db3ccaf2902ff2c4ca70b021e350307d
+timeCreated: 1461092995
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stampsAtlas (1)_0
+    21300002: stampsAtlas (1)_1
+    21300004: stampsAtlas (1)_2
+    21300006: stampsAtlas (1)_3
+    21300008: stampsAtlas (1)_4
+    21300010: stampsAtlas (1)_5
+    21300012: stampsAtlas (1)_6
+    21300014: stampsAtlas (1)_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: stampsAtlas (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.48650497, y: 0.20242906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97.45473, y: 165.17816}
+        - {x: 17.454727, y: 188.17816}
+        - {x: -63.545273, y: 188.17816}
+        - {x: -98.54527, y: 177.17816}
+        - {x: -107.54527, y: 148.17816}
+        - {x: -107.54527, y: 105.17816}
+        - {x: -88.54527, y: 97.17816}
+        - {x: -56.545273, y: 94.17816}
+        - {x: -43.545273, y: 107.17816}
+        - {x: -76.54527, y: 125.17816}
+        - {x: -55.545273, y: 115.17816}
+        - {x: -43.545273, y: 112.17816}
+        - {x: 5.454727, y: 124.17816}
+        - {x: 37.454727, y: 106.17816}
+        - {x: 36.454727, y: 59.17816}
+        - {x: -16.545273, y: 35.17816}
+        - {x: -28.545273, y: 80.17816}
+        - {x: -17.545273, y: 88.17816}
+        - {x: -1.5452728, y: 88.17816}
+        - {x: 1.4547272, y: 80.17816}
+        - {x: -2.5452728, y: 85.17816}
+        - {x: -11.545273, y: 87.17816}
+        - {x: -21.545273, y: 80.17816}
+        - {x: -21.545273, y: 71.17816}
+        - {x: -20.545273, y: 65.17816}
+        - {x: -10.545273, y: 56.17816}
+        - {x: 5.454727, y: 56.17816}
+        - {x: 23.454727, y: 59.17816}
+        - {x: 18.454727, y: 116.17816}
+        - {x: -25.545273, y: 108.17816}
+        - {x: -45.545273, y: 90.17816}
+        - {x: -49.545273, y: 83.17816}
+        - {x: -55.545273, y: 72.17816}
+        - {x: -56.545273, y: 57.17816}
+        - {x: -59.545273, y: 64.17816}
+        - {x: -54.545273, y: 75.17816}
+        - {x: -59.545273, y: 85.17816}
+        - {x: -97.54527, y: 81.17816}
+        - {x: -107.54527, y: 75.17816}
+        - {x: -107.54527, y: 43.17816}
+        - {x: -92.54527, y: 8.178162}
+        - {x: -60.545273, y: 21.178162}
+        - {x: -46.545273, y: 35.17816}
+        - {x: -28.545273, y: 21.178162}
+        - {x: -39.545273, y: 28.178162}
+        - {x: -45.545273, y: 27.178162}
+        - {x: -59.545273, y: 16.178162}
+        - {x: -72.54527, y: -0.8218384}
+        - {x: -64.54527, y: -22.821838}
+        - {x: -54.545273, y: -30.821838}
+        - {x: -42.545273, y: -33.82184}
+        - {x: -15.545273, y: -33.82184}
+        - {x: -4.545273, y: -15.821838}
+        - {x: 105.45473, y: 14.178162}
+        - {x: 105.45473, y: 137.17816}
+      - - {x: 1.4547272, y: 30.178162}
+        - {x: 1.4547272, y: -23.821838}
+        - {x: 2.4547272, y: -27.821838}
+        - {x: 17.454727, y: -33.82184}
+        - {x: 39.454727, y: -33.82184}
+        - {x: 59.454727, y: -27.821838}
+        - {x: 64.45473, y: -16.821838}
+        - {x: 64.45473, y: 15.178162}
+        - {x: 52.454727, y: 30.178162}
+    - name: stampsAtlas (1)_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: 40}
+        - {x: 48, y: 55}
+        - {x: 44, y: 61}
+        - {x: 36, y: 67}
+        - {x: 39, y: 64}
+        - {x: 48, y: 60}
+        - {x: 51, y: 56}
+        - {x: 84, y: 61}
+        - {x: 90, y: 68}
+        - {x: 97, y: 76}
+        - {x: 97, y: 242}
+        - {x: -18, y: 242}
+        - {x: -38, y: 235}
+        - {x: -44, y: 212}
+        - {x: -41, y: 199}
+        - {x: -62, y: 223}
+        - {x: -84, y: 225}
+        - {x: -94, y: 214}
+        - {x: -91, y: 193}
+        - {x: -57, y: 161}
+        - {x: -54, y: 160}
+        - {x: -35, y: 160}
+        - {x: -28, y: 166}
+        - {x: -27, y: 174}
+        - {x: -27, y: 151}
+        - {x: -57, y: 151}
+        - {x: -77, y: 146}
+        - {x: -99, y: 119}
+        - {x: -99, y: 93}
+        - {x: -47, y: 63}
+        - {x: -34, y: 66}
+        - {x: -23, y: 77}
+        - {x: -19, y: 86}
+        - {x: -17, y: 93}
+        - {x: -13, y: 108}
+        - {x: -20, y: 106}
+        - {x: -5, y: 107}
+        - {x: -4, y: 97}
+        - {x: -27, y: 74}
+        - {x: -36, y: 64}
+        - {x: -43, y: 47}
+        - {x: -40, y: 19}
+        - {x: -28, y: 0}
+        - {x: 14, y: 0}
+        - {x: 15, y: 1}
+        - {x: 15, y: 6}
+        - {x: 44, y: 32}
+    - name: stampsAtlas (1)_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 56}
+        - {x: -90, y: 0}
+        - {x: 79, y: 0}
+        - {x: 128, y: 58}
+        - {x: 128, y: 81}
+        - {x: -128, y: 81}
+      - - {x: -128, y: 101}
+        - {x: -128, y: 82}
+        - {x: 128, y: 82}
+        - {x: 128, y: 101}
+    - name: stampsAtlas (1)_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: 130}
+        - {x: 38, y: 205}
+        - {x: 23, y: 210}
+        - {x: -43, y: 207}
+        - {x: -47, y: 204}
+        - {x: -47, y: 203}
+        - {x: -42, y: 209}
+        - {x: -40, y: 214}
+        - {x: -38, y: 227}
+        - {x: -46, y: 235}
+        - {x: -71, y: 235}
+        - {x: -91, y: 158}
+        - {x: -91, y: 3}
+        - {x: -90, y: 0}
+        - {x: 76, y: 0}
+        - {x: 78, y: 2}
+        - {x: 77, y: 13}
+        - {x: 82, y: 43}
+    - name: stampsAtlas (1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 17}
+        - {x: 7, y: 12}
+        - {x: 8, y: 4}
+        - {x: 16, y: 2}
+        - {x: 21, y: 2}
+        - {x: 106, y: 42}
+        - {x: 122, y: 66}
+        - {x: 126, y: 91}
+        - {x: 126, y: 136}
+        - {x: 57, y: 253}
+        - {x: 10, y: 253}
+        - {x: -30, y: 247}
+        - {x: -61, y: 183}
+        - {x: -61, y: 50}
+        - {x: -26, y: 2}
+        - {x: 4, y: 2}
+        - {x: 7, y: 8}
+        - {x: 7, y: 23}
+        - {x: 8, y: 24}
+    - name: stampsAtlas (1)_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 168}
+        - {x: 128, y: 181}
+        - {x: 121, y: 200}
+        - {x: 44, y: 220}
+        - {x: -5, y: 220}
+        - {x: -73, y: 171}
+        - {x: -121, y: 92}
+        - {x: -123, y: 73}
+        - {x: -123, y: 2}
+        - {x: -118, y: 0}
+        - {x: 98, y: 0}
+        - {x: 128, y: 12}
+        - {x: 128, y: 95}
+        - {x: 116, y: 111}
+    - name: stampsAtlas (1)_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 41}
+        - {x: -128, y: 31}
+        - {x: -127, y: 31}
+        - {x: -124, y: 34}
+        - {x: -124, y: 39}
+        - {x: -126, y: 41}
+    - name: stampsAtlas (1)_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 256}
+        - {x: -6, y: 252}
+        - {x: 8, y: 251}
+        - {x: 61, y: 251}
+        - {x: 66, y: 253}
+        - {x: 66, y: 256}
+      - - {x: -52, y: 256}
+        - {x: -51, y: 253}
+        - {x: -43, y: 253}
+        - {x: -41, y: 255}
+        - {x: -41, y: 256}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

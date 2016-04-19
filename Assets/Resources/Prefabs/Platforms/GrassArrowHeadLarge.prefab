@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497112}
   m_Layer: 0
-  m_Name: GreenArrowHeadLarge
+  m_Name: GrassArrowHeadLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,8 +57,8 @@ GameObject:
   - 4: {fileID: 454418}
   - 61: {fileID: 6119880}
   m_Layer: 0
-  m_Name: TopGround
-  m_TagString: Untagged
+  m_Name: GrassGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,8 +73,8 @@ GameObject:
   - 4: {fileID: 462076}
   - 61: {fileID: 6171120}
   m_Layer: 0
-  m_Name: BottomGround
-  m_TagString: Untagged
+  m_Name: GrassGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -473,7 +473,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: GrassGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100262}

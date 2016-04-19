@@ -52,10 +52,18 @@ public class PlayerController : MonoBehaviour {
         {
             if (colliders[i].gameObject != this.gameObject)
             {
+                // Make sure the trailing stamp is correct based on the patch tile currently being stood on.
+                if (colliders[i].CompareTag("GroundPatch"))
+                {
+                    trailingRenderer.Set(colliders[i].name);
+                    //jumpStampRenderer.Set(colliders[i].name);
+                }
+                // Update the value of isGrounded to reflect the appropriate state.
                 isGrounded = true;
                 return;
             }
         }
+        trailingRenderer.Unset();
         isGrounded = false;
     }
 
@@ -141,19 +149,19 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("BlankStamp"))
+        if (other.CompareTag("BlankStamp"))
         {
             gameController.patternController.blankStamp = other.gameObject;
         }
-        else if (other.tag.Equals("Pattern"))
+        else if (other.CompareTag("Pattern"))
         {
             gameController.patternController.AddPatternToCollection(other.gameObject);
         }
-        else if (other.tag.Equals("DisallowStamps"))
+        else if (other.CompareTag("DisallowStamps"))
         {
             canStamp = false;
         }
-        else if (other.tag.Equals("ShouldBeParent"))
+        else if (other.CompareTag("ShouldBeParent"))
         {
             transform.parent = other.transform.parent;
         }
@@ -164,10 +172,16 @@ public class PlayerController : MonoBehaviour {
             // Respawn the character.
             transform.position = startPosition;
         }
-        else if (other.tag.Equals("ActivateOnEnter"))
+        else if (other.CompareTag("ActivateOnEnter"))
         {
             other.GetComponent<ActivateOnEnter>().Activate();
             Debug.Log("Activating.");
+        }
+        else if (other.CompareTag("Brick"))
+        {
+            Vector3 targetPosition = new Vector3(other.transform.position.x, groundCheck.position.y, groundCheck.position.z);
+            trailingRenderer.StampBrick(targetPosition);
+            other.enabled = false;
         }
 
         // Check for having entered the goal.
@@ -183,15 +197,15 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag.Equals("BlankStamp"))
+        if (other.CompareTag("BlankStamp"))
         {
             gameController.patternController.blankStamp = null;
         }
-        else if (other.tag.Equals("DisallowStamps"))
+        else if (other.CompareTag("DisallowStamps"))
         {
             canStamp = true;
         }
-        else if (other.tag.Equals("ShouldBeParent"))
+        else if (other.CompareTag("ShouldBeParent"))
         {
             transform.parent = null;
         }

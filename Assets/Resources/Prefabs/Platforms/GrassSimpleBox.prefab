@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 424416}
   m_Layer: 0
-  m_Name: GreenSimpleBox
+  m_Name: GrassSimpleBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,8 +90,8 @@ GameObject:
   - 4: {fileID: 471626}
   - 61: {fileID: 6152870}
   m_Layer: 0
-  m_Name: BoxGround
-  m_TagString: Untagged
+  m_Name: GrassGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: GrassGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159008}

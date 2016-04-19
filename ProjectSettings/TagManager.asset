@@ -16,6 +16,8 @@ TagManager:
   - MenuSelection
   - MoveStamp
   - ActivateOnEnter
+  - GroundPatch
+  - Brick
   layers:
   - Default
   - TransparentFX

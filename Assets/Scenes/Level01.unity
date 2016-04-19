@@ -488,6 +488,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 100262, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
   m_IsPrefabParent: 0
@@ -587,7 +591,7 @@ GameObject:
   - 4: {fileID: 154799007}
   - 61: {fileID: 154799009}
   - 114: {fileID: 154799008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PossumSpeechTrigger
   m_TagString: ActivateOnEnter
   m_Icon: {fileID: 0}
@@ -646,7 +650,7 @@ GameObject:
   - 4: {fileID: 178228063}
   - 114: {fileID: 178228064}
   m_Layer: 0
-  m_Name: Bridge
+  m_Name: BrickBridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,6 +821,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
   m_IsPrefabParent: 0
@@ -865,11 +873,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_Name
-      value: GreenArrowHeadSmall (3)
+      value: GrassArrowHeadSmall (3)
       objectReference: {fileID: 0}
     - target: {fileID: 21240514, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -1077,7 +1089,7 @@ GameObject:
   - 4: {fileID: 267323526}
   - 212: {fileID: 267323527}
   m_Layer: 0
-  m_Name: PatchAtlas_10
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1382,11 +1394,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_Name
-      value: GreenArrowHeadSmall (6)
+      value: GrassArrowHeadSmall (6)
       objectReference: {fileID: 0}
     - target: {fileID: 21240514, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -1405,7 +1421,7 @@ GameObject:
   - 4: {fileID: 379935363}
   - 212: {fileID: 379935365}
   m_Layer: 0
-  m_Name: PatchAtlas_14
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1470,7 +1486,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474850, guid: 69414a79a8694a049938899ac29a016a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.52
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 474850, guid: 69414a79a8694a049938899ac29a016a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1700,7 +1716,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
 --- !u!1 &514047332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,7 +1727,7 @@ GameObject:
   - 4: {fileID: 514047333}
   - 212: {fileID: 514047334}
   m_Layer: 0
-  m_Name: PatchAtlas_10 (1)
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1768,13 +1784,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 561720966}
   - 212: {fileID: 561720967}
+  - 61: {fileID: 561720968}
   m_Layer: 0
   m_Name: PatchAtlas_2
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &561720966
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,6 +1834,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!61 &561720968
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561720965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.99}
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.05}
 --- !u!1001 &583659708
 Prefab:
   m_ObjectHideFlags: 0
@@ -1855,6 +1886,10 @@ Prefab:
     - target: {fileID: 474068, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -1968,7 +2003,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_Name
-      value: GreenArrowHeadSmall (5)
+      value: GrassArrowHeadSmall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -2011,6 +2050,10 @@ Prefab:
     - target: {fileID: 474068, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -2434,7 +2477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1 &919976571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,8 +2488,8 @@ GameObject:
   - 4: {fileID: 919976572}
   - 61: {fileID: 919976573}
   m_Layer: 0
-  m_Name: Ground (4)
-  m_TagString: Untagged
+  m_Name: WoodGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2687,7 +2730,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1059689790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.11, y: -5.68, z: 0}
+  m_LocalPosition: {x: 33.27, y: -5.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2067101528}
@@ -2850,6 +2893,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100262, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
   m_IsPrefabParent: 0
@@ -2984,7 +3031,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474850, guid: 69414a79a8694a049938899ac29a016a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.46
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 474850, guid: 69414a79a8694a049938899ac29a016a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3039,8 +3086,8 @@ GameObject:
   - 4: {fileID: 1145270793}
   - 212: {fileID: 1145270794}
   m_Layer: 0
-  m_Name: PatchAtlas_1
-  m_TagString: Untagged
+  m_Name: Grass
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3128,11 +3175,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_Name
-      value: GreenArrowHeadSmall (4)
+      value: GrassArrowHeadSmall (4)
       objectReference: {fileID: 0}
     - target: {fileID: 21280826, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -3263,6 +3314,10 @@ Prefab:
     - target: {fileID: 497112, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100262, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
@@ -3453,7 +3508,7 @@ GameObject:
   - 212: {fileID: 1190719006}
   - 95: {fileID: 1190719005}
   - 114: {fileID: 1190719008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Possum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3542,7 +3597,7 @@ GameObject:
   - 4: {fileID: 1200140033}
   - 212: {fileID: 1200140034}
   m_Layer: 0
-  m_Name: PatchAtlas_10
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3691,11 +3746,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1235913616}
   m_LocalRotation: {x: 0, y: 0, z: -0.050713018, w: 0.99871325}
-  m_LocalPosition: {x: 40.93182, y: -8.9, z: 0}
+  m_LocalPosition: {x: 40.25, y: -8.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
 --- !u!1 &1238711645 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 142798, guid: a5817eb888a15834088206432f4f49b0, type: 2}
@@ -3776,8 +3831,8 @@ GameObject:
   - 4: {fileID: 1247992977}
   - 61: {fileID: 1247992978}
   m_Layer: 0
-  m_Name: Ground
-  m_TagString: Untagged
+  m_Name: WoodGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3923,7 +3978,7 @@ GameObject:
   - 4: {fileID: 1367319207}
   - 61: {fileID: 1367319208}
   m_Layer: 0
-  m_Name: Ground (1)
+  m_Name: WoodGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4039,6 +4094,10 @@ Prefab:
     - target: {fileID: 497112, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100262, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
@@ -4161,11 +4220,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_Name
-      value: GreenArrowHeadSmall (1)
+      value: GrassArrowHeadSmall (1)
       objectReference: {fileID: 0}
     - target: {fileID: 21280826, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -4209,6 +4272,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100262, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 102440, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_Name
+      value: GrassGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 102130, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_Name
+      value: GrassGround
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
   m_IsPrefabParent: 0
@@ -4221,13 +4296,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 1485837167}
   - 212: {fileID: 1485837168}
+  - 61: {fileID: 1485837169}
   m_Layer: 0
   m_Name: PatchAtlas_3
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1485837167
 Transform:
   m_ObjectHideFlags: 0
@@ -4270,6 +4346,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!61 &1485837169
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485837166}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.99}
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.05}
 --- !u!1 &1507791277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,12 +4720,12 @@ GameObject:
   - 4: {fileID: 1601490142}
   - 61: {fileID: 1601490143}
   m_Layer: 0
-  m_Name: Ground (4)
+  m_Name: BrickGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1601490142
 Transform:
   m_ObjectHideFlags: 0
@@ -4718,7 +4808,7 @@ GameObject:
   - 4: {fileID: 1643760921}
   - 212: {fileID: 1643760922}
   m_Layer: 0
-  m_Name: PatchAtlas_15
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4775,11 +4865,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 483140, guid: 2fef73c0b1edbbb41809f6c1efc88bb1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.96
+      value: -1.99
       objectReference: {fileID: 0}
     - target: {fileID: 483140, guid: 2fef73c0b1edbbb41809f6c1efc88bb1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.08
+      value: -7.06
       objectReference: {fileID: 0}
     - target: {fileID: 483140, guid: 2fef73c0b1edbbb41809f6c1efc88bb1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4893,7 +4983,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1695561785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FillStamps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4959,6 +5049,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100262, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 162e7dfc0e67b5d4ab463befc5ed382b, type: 2}
   m_IsPrefabParent: 0
@@ -5003,7 +5097,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_Name
-      value: GreenArrowHeadSmall (2)
+      value: GrassArrowHeadSmall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -5018,7 +5116,7 @@ GameObject:
   - 4: {fileID: 1800716960}
   - 212: {fileID: 1800716961}
   m_Layer: 0
-  m_Name: PatchAtlas_10 (1)
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5080,8 +5178,8 @@ GameObject:
   - 4: {fileID: 1844880008}
   - 61: {fileID: 1844880009}
   m_Layer: 0
-  m_Name: Ground (2)
-  m_TagString: Untagged
+  m_Name: WoodGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5122,7 +5220,7 @@ GameObject:
   - 4: {fileID: 1855076079}
   - 212: {fileID: 1855076081}
   m_Layer: 0
-  m_Name: PatchAtlas_14
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5212,6 +5310,10 @@ Prefab:
     - target: {fileID: 474068, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_RootOrder
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -5350,6 +5452,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
   m_IsPrefabParent: 0
@@ -5362,13 +5468,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 1924869771}
   - 212: {fileID: 1924869772}
+  - 61: {fileID: 1924869773}
   m_Layer: 0
   m_Name: PatchAtlas_7
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1924869771
 Transform:
   m_ObjectHideFlags: 0
@@ -5411,6 +5518,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
+--- !u!61 &1924869773
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1924869770}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.99}
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.05}
 --- !u!1 &1935854786
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,13 +5541,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 1935854787}
   - 212: {fileID: 1935854788}
+  - 61: {fileID: 1935854789}
   m_Layer: 0
   m_Name: PatchAtlas_6
-  m_TagString: Untagged
+  m_TagString: Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1935854787
 Transform:
   m_ObjectHideFlags: 0
@@ -5469,6 +5591,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
+--- !u!61 &1935854789
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935854786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.99}
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.05}
 --- !u!1001 &1975176419
 Prefab:
   m_ObjectHideFlags: 0
@@ -5628,6 +5764,10 @@ Prefab:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
   m_IsPrefabParent: 0
@@ -5681,6 +5821,10 @@ Prefab:
     - target: {fileID: 21280826, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 174940, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
+      propertyPath: m_TagString
+      value: GroundPatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df057ed5d1c56c49b4ab40938307e64, type: 2}
@@ -5844,7 +5988,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
 --- !u!1 &2067101527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6011,7 +6155,7 @@ GameObject:
   - 4: {fileID: 2110012223}
   - 212: {fileID: 2110012224}
   m_Layer: 0
-  m_Name: PatchAtlas_15
+  m_Name: WoodPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6069,8 +6213,8 @@ GameObject:
   - 4: {fileID: 2118364632}
   - 61: {fileID: 2118364633}
   m_Layer: 0
-  m_Name: Ground (3)
-  m_TagString: Untagged
+  m_Name: WoodGround
+  m_TagString: GroundPatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

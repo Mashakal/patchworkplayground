@@ -5,7 +5,7 @@
 public class UserInput : MonoBehaviour {
 
     // Significant keys.
-    private KeyCode actionKey = KeyCode.UpArrow;      // The action key.
+    private KeyCode actionKey = KeyCode.KeypadEnter;      // The action key.
     private KeyCode pauseKey = KeyCode.Escape;  // The pause/menu key.
 
     // References.
