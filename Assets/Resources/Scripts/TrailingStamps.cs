@@ -88,7 +88,6 @@ public class TrailingStamps : Stamper {
             }
             else if (pName.Contains("Brick"))
             {
-                // FML
                 currentStyle = "Brick";
                 trailingStamp = Resources.Load(trailingStampsPath + trailingBrick) as GameObject;
                 possibleDeltaValues = new float[] { 0 };
@@ -101,7 +100,6 @@ public class TrailingStamps : Stamper {
                 possibleDeltaValues = new float[] { 0 };
                 possibleScaleValues = new float[] { 0.85f, 0.9f, 0.95f, 1.0f, 1.05f, 1.1f, 1.15f, 1.2f, 1.25f, 1.3f };
             }
-            Debug.Log("Switched trailing stamp to: " + currentStyle);
         }
     }
 
@@ -115,7 +113,6 @@ public class TrailingStamps : Stamper {
     // Brick's are rendered only when a trigger is activated.
     public void StampBrick(Vector3 pTargetPosition)
     {
-        Debug.Log("StampBrick has been called.");
         GameObject newSprite;
         string stampTag = "TrailingStamp";
 
@@ -135,6 +132,5 @@ public class TrailingStamps : Stamper {
         newSprite.transform.parent = container.transform;
         allStamps = AddSprite(newSprite, allStamps, stampIndex);
         stampIndex = (stampIndex + 1) % maxTrailingStamps;
-        Debug.Log("StampBrick is returning.");
     }
 }

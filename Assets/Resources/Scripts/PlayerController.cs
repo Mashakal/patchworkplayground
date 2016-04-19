@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
                 if (colliders[i].CompareTag("GroundPatch"))
                 {
                     trailingRenderer.Set(colliders[i].name);
-                    //jumpStampRenderer.Set(colliders[i].name);
+                    jumpStampRenderer.Set(colliders[i].name);
                 }
                 // Update the value of isGrounded to reflect the appropriate state.
                 isGrounded = true;
@@ -175,7 +175,6 @@ public class PlayerController : MonoBehaviour {
         else if (other.CompareTag("ActivateOnEnter"))
         {
             other.GetComponent<ActivateOnEnter>().Activate();
-            Debug.Log("Activating.");
         }
         else if (other.CompareTag("Brick"))
         {

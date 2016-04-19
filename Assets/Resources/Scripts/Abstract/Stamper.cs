@@ -19,18 +19,19 @@ public abstract class Stamper : MonoBehaviour {
     }
 
 
-    protected bool SearchVacinityForStamp(string pSearchForTag, Vector2 pTargetPosition)
+    // Searches within a radious of pTargetPosition for a rendered stamp that has the tag pSearchForTag.
+    // pDistanceAmplifier is used to increase the radius of the search area, consequently increasing the distance between acceptable stamp positions.
+    protected bool SearchVacinityForStamp(string pSearchForTag, Vector2 pTargetPosition, float pDistanceAmplifier = 1f)
     {
         Collider2D[] collidersFound;            // Holds all the colliders found in the vacinity.
-        float distanceToSearchAmplifier = 1f;   // Control the distance between stamps, higher numbers make a false statement more difficult to achieve.
 
         // Search with different radii to avoid the "Polka Dot Effect" (equal distances between stamps).
-        float[] radii = { 0.4f, 0.6f, 0.8f, 1.0f, 1.2f, 1.4f };
+        float[] radii = { 0.4f, 0.5f, 0.6f, 0.8f, 1.0f, 1.2f };
         int randomIndex = (int)(UnityEngine.Random.value * radii.Length);
         float radiusToSearch = radii[randomIndex];
 
         // Do the searching.
-        collidersFound = Physics2D.OverlapCircleAll(pTargetPosition, radiusToSearch * distanceToSearchAmplifier);
+        collidersFound = Physics2D.OverlapCircleAll(pTargetPosition, radiusToSearch * pDistanceAmplifier);
         if (collidersFound.Length != 0)
         {
             foreach (Collider2D coll in collidersFound)
