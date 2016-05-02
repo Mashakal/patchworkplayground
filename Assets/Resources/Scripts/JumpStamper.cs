@@ -55,7 +55,6 @@ public class JumpStamper : Stamper {
     // Sets the appropriate jump stamp
     public void Set(string pName)
     {
-        Debug.Log("Jump set where pName is: " + pName);
         if (currentStyle == null || !pName.Contains(currentStyle))
         {
             if (pName.Contains("Grass"))

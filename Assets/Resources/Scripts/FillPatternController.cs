@@ -9,7 +9,7 @@ public class FillPatternController : MonoBehaviour {
     // Private variables.
     private List<GameObject> allPatterns;     // Holds every pattern the player has obtained.
     private GameObject fillPattern;           // The current pattern to be used for filling in stamps.
-    private int blankStampCount;
+    private int blankStampCount;              // How many blank stamps have not been filled within the current level.
 
     // Properties.
     public GameObject FillPattern { get { return fillPattern; } set { fillPattern = value; } }
@@ -20,7 +20,7 @@ public class FillPatternController : MonoBehaviour {
     void Start ()
     {
         allPatterns = new List<GameObject>();
-        blankStampCount = GameObject.FindGameObjectsWithTag("BlankStamp").Length;
+        blankStampCount = CountBlankStampsInLevel();
     }
 
 
@@ -38,10 +38,25 @@ public class FillPatternController : MonoBehaviour {
     }
 
 
+    // Fills in the current blank stamp, should only be called when the player is in front of a blank stamp.
     public void FillBlankStamp()
     {
         blankStamp.GetComponent<SpriteRenderer>().color = fillPattern.GetComponent<SpriteRenderer>().color;
         blankStamp = null;
         blankStampCount--;
+    }
+
+
+    // Returns the INITIAL number of blank stamps in the current level.
+    private int CountBlankStampsInLevel()
+    {
+        return GameObject.FindGameObjectsWithTag("BlankStamp").Length;
+    }
+
+
+    // Should be called when a new level is being loaded, prepares the script for a new level.
+    public void InitLevel()
+    {
+        blankStampCount = CountBlankStampsInLevel();
     }
 }

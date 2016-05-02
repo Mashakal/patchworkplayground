@@ -47,6 +47,7 @@ public class FillColorMenu : MonoBehaviour {
     // Process the user input for the fill menu.
     public void ProcessUserInput(int vertical, int horizontal, bool enter)
     {
+        // Allow both horizontal and vertical keys to move through menu selections.
         if (vertical != 0 || horizontal != 0)
         {
             if (patterns.Length != 0)
