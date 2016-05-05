@@ -5,7 +5,7 @@ public class JumpStamper : Stamper {
 
     // Inspector variables.
     public GameObject jumpStamp;            // The sprite that should be rendered as the jump stamp.
-    public int maxJumpStamps;               // The maximum number of jump stamps to be rendered.
+    public int maxJumpStamps = 50;          // The maximum number of jump stamps to be rendered.
     public GameObject container;            // The parent GameObject for which to add the jump stamps.
 
     // Private variables.

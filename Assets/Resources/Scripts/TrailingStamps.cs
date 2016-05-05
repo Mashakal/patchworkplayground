@@ -5,7 +5,7 @@ public class TrailingStamps : Stamper {
 
     // Inspector variables.
     public GameObject trailingStamp;        // The sprite that should be rendered as the trailing move stamp.
-    public int maxTrailingStamps;           // The maximum number of trailing stamps to be rendered.
+    public int maxTrailingStamps = 250;     // The maximum number of trailing stamps to be rendered.
     public GameObject container;            // The parent GameObject for which to add the trailing stamps created.
 
     // Private variables.
