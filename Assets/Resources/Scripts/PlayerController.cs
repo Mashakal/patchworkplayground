@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class PlayerController : MonoBehaviour {
 
     // Inspector variables.
-    public float moveSpeed = 2f;              // How quickly the character moves.
+    public float moveSpeed = 3.5f;            // How quickly the character moves.
     public LayerMask whatIsGround;            // A mask determining what is ground to the player.
     public float jumpForce = 600f;            // The force applied for a jump action.
 
@@ -128,10 +128,17 @@ public class PlayerController : MonoBehaviour {
                 // Check for entering the goal, ending the level.
                 if (isInActiveGoal)
                 {
+                    Reset();
                     gameController.LoadNextLevel();
                 }
             }
         }
+    }
+
+    public void Reset()
+    {
+        isInActiveGoal = false;
+        canStamp = true;
     }
 
 
@@ -145,7 +152,6 @@ public class PlayerController : MonoBehaviour {
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {
