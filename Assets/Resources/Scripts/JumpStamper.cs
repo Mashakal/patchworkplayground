@@ -6,7 +6,6 @@ public class JumpStamper : Stamper {
     // Inspector variables.
     public GameObject jumpStamp;            // The sprite that should be rendered as the jump stamp.
     public int maxJumpStamps = 50;          // The maximum number of jump stamps to be rendered.
-    public GameObject container;            // The parent GameObject for which to add the jump stamps.
 
     // Private variables.
     private int stampIndex = 0;
@@ -26,7 +25,13 @@ public class JumpStamper : Stamper {
     private void Start ()
     {
         allStamps = new GameObject[maxJumpStamps];
+        FindStampContainer();
 	}
+
+    public void Reset()
+    {
+        FindStampContainer();
+    }
 	
     public void Stamp(Vector3 pTargetPosition)
     {
@@ -43,7 +48,7 @@ public class JumpStamper : Stamper {
             // Add the tag.
             newSprite.tag = stampTag;
             // Make it a child of the container GameObject.
-            newSprite.transform.parent = container.transform;
+            newSprite.transform.parent = stampContainer.transform;
             // Add the sprite to the tracking array.
             allStamps = AddSprite(newSprite, allStamps, stampIndex);
             // Increment the stampIndex

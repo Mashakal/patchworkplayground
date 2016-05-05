@@ -1,7 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Stamper : MonoBehaviour { 
+public abstract class Stamper : MonoBehaviour {
+    protected GameObject stampContainer;
+
+    protected bool FindStampContainer()
+    {
+        stampContainer = GameObject.Find("StampContainer");
+        return stampContainer == null ? false : true;
+    }
 
     protected GameObject[] AddSprite(GameObject pSpriteToAdd, GameObject[] pAllStamps, int pStampIndex)
     {
