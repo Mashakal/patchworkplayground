@@ -148,6 +148,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 44667835}
   - 114: {fileID: 44667836}
+  - 114: {fileID: 44667837}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -182,6 +183,17 @@ MonoBehaviour:
   state: 0
   hudController: {fileID: 0}
   patternController: {fileID: 0}
+--- !u!114 &44667837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44667834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a13358f5438544e8c3a4bc883f0f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &47270399
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +249,7 @@ GameObject:
   - 124: {fileID: 68821014}
   - 81: {fileID: 68821013}
   - 114: {fileID: 68821018}
+  - 114: {fileID: 68821019}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -326,6 +339,17 @@ MonoBehaviour:
   smoothTimeY: 0.4
   yMinCamPos: -6
   yMaxCamPos: 1000
+--- !u!114 &68821019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68821012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a13358f5438544e8c3a4bc883f0f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &72327164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,7 +2203,7 @@ Transform:
   - {fileID: 1145270793}
   - {fileID: 506197791}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &740075190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,6 +2686,7 @@ GameObject:
   - 50: {fileID: 1059689792}
   - 61: {fileID: 1059689796}
   - 58: {fileID: 1059689797}
+  - 114: {fileID: 1059689801}
   - 114: {fileID: 1059689791}
   - 114: {fileID: 1059689799}
   - 114: {fileID: 1059689798}
@@ -2833,6 +2858,17 @@ MonoBehaviour:
   jumpStamp: {fileID: 189980, guid: 8bb02c23c5dd20943bc9adc2e0f404ca, type: 2}
   maxJumpStamps: 50
   container: {fileID: 711615002}
+--- !u!114 &1059689801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059689790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a13358f5438544e8c3a4bc883f0f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063581551
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,11 +3722,11 @@ Transform:
   m_GameObject: {fileID: 1201626465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -67.29791, y: -0.5418789, z: 0}
-  m_LocalScale: {x: 0.6666667, y: 0.33333334, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 772593158}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 8
+  m_RootOrder: 10
 --- !u!114 &1201626467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4405,6 +4441,7 @@ GameObject:
   - 114: {fileID: 1507791280}
   - 114: {fileID: 1507791279}
   - 114: {fileID: 1507791282}
+  - 114: {fileID: 1507791283}
   m_Layer: 0
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -4495,6 +4532,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdbeb9507ad189746b4956e14bf38c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1507791283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507791277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a13358f5438544e8c3a4bc883f0f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1511810164 stripped
@@ -4825,7 +4873,7 @@ Transform:
   - {fileID: 1331417110}
   - {fileID: 1214147427}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &1633685382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,9 +5219,9 @@ Transform:
   - {fileID: 1158170902}
   - {fileID: 1885306267}
   - {fileID: 1190719007}
-  - {fileID: 1201626466}
   - {fileID: 1603630000}
   - {fileID: 736136711}
+  - {fileID: 1201626466}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!1001 &1723339659

@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour {
                 // Check for entering the goal, ending the level.
                 if (isInActiveGoal)
                 {
-                    gameController.LoadLevel(2);
+                    gameController.LoadNextLevel();
                 }
             }
         }

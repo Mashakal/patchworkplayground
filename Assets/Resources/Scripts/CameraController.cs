@@ -3,11 +3,11 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-    // Inspector variables.
-    public float smoothTimeX;
-    public float smoothTimeY;
-    public float yMinCamPos;
-    public float yMaxCamPos;
+    // Inspector variables.  These defaults are the default fo Addie's Patchwork Playground.
+    public float smoothTimeX = 0.3f;
+    public float smoothTimeY = 0.4f;
+    public float yMinCamPos = -6f;
+    public float yMaxCamPos = 1000f;
 
     // Private variables.
     private GameObject player;

@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
     };
 
     // Private variables.
-    private int currentLevel = 0;
+    private int currentLevel = 1;
 
     // References.
     public HUDController hudController;
