@@ -5,8 +5,9 @@
 public class UserInput : MonoBehaviour {
 
     // Significant keys.
-    private KeyCode actionKey = KeyCode.UpArrow;      // The action key.
-    private KeyCode pauseKey = KeyCode.Escape;  // The pause/menu key.
+    private KeyCode actionKey = KeyCode.UpArrow;    // The action key.
+    private KeyCode pauseKey = KeyCode.Escape;      // The pause/menu key.
+    private KeyCode levelKey = KeyCode.L;           // Loads the next level immediately.
 
     // References.
     private PlayerController pController;
@@ -57,6 +58,13 @@ public class UserInput : MonoBehaviour {
 
             // Look for the action button.
             bool action = Input.GetKeyDown(actionKey);
+
+            // Look for Load the next level action.
+            if (Input.GetKeyDown(levelKey))
+            {
+                gameController.LoadNextLevel();
+                return;
+            }
 
             // Pass all input parameters to the player controller.
             pController.ProcessUserInput(hMove, jump, action);
