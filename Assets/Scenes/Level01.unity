@@ -2112,11 +2112,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711615002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -65.58439, y: 0.3413908, z: 0}
+  m_LocalPosition: {x: -65.5844, y: 0.3413908, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.33333334, z: 1}
   m_Children: []
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 4
+  m_RootOrder: 9
 --- !u!1 &715855068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,7 +2203,7 @@ Transform:
   - {fileID: 1145270793}
   - {fileID: 506197791}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &740075190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,11 +2686,11 @@ GameObject:
   - 50: {fileID: 1059689792}
   - 61: {fileID: 1059689796}
   - 58: {fileID: 1059689797}
-  - 114: {fileID: 1059689801}
   - 114: {fileID: 1059689791}
   - 114: {fileID: 1059689799}
   - 114: {fileID: 1059689798}
   - 114: {fileID: 1059689800}
+  - 114: {fileID: 1059689801}
   m_Layer: 0
   m_Name: CharacterAddie
   m_TagString: Player
@@ -2832,7 +2832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trailingStamp: {fileID: 166484, guid: 8c76d57441c36794699a4d25e40482bd, type: 2}
   maxTrailingStamps: 250
-  container: {fileID: 711615002}
 --- !u!114 &1059689799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2857,7 +2856,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpStamp: {fileID: 189980, guid: 8bb02c23c5dd20943bc9adc2e0f404ca, type: 2}
   maxJumpStamps: 50
-  container: {fileID: 711615002}
 --- !u!114 &1059689801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3328,7 +3326,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1001 &1168898671
 Prefab:
   m_ObjectHideFlags: 0
@@ -3627,7 +3625,7 @@ Transform:
   m_Children:
   - {fileID: 154799007}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &1190719008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3721,12 +3719,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201626465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.29791, y: -0.5418789, z: 0}
+  m_LocalPosition: {x: 15.173134, y: -7.135637, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 772593158}
-  m_Father: {fileID: 1722218736}
-  m_RootOrder: 10
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!114 &1201626467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4873,7 +4871,7 @@ Transform:
   - {fileID: 1331417110}
   - {fileID: 1214147427}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &1633685382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5215,13 +5213,12 @@ Transform:
   - {fileID: 47270400}
   - {fileID: 1695561785}
   - {fileID: 2039111507}
-  - {fileID: 711615003}
   - {fileID: 1158170902}
   - {fileID: 1885306267}
   - {fileID: 1190719007}
   - {fileID: 1603630000}
   - {fileID: 736136711}
-  - {fileID: 1201626466}
+  - {fileID: 711615003}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!1001 &1723339659
@@ -5520,7 +5517,7 @@ RectTransform:
   m_Children:
   - {fileID: 642322459}
   m_Father: {fileID: 1722218736}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -63.193336, y: 0.07666683}
