@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
     private Transform groundCheck;            // A position marking where to check if the player is grounded.
     private float k_GroundedRadius = 0.1f;    // The radius of the overlap circle to determine if the player is grounded.
     private Vector3 startPosition;            // The player's starting position.
-    private bool isGrounded;                  // Whether or not the player is grounded.
+    private bool _isGrounded;                 // Whether or not the player is grounded.
     private bool isFacingRight;               // Whether or not the player is facing right.
     private bool isMoving = false;            // Whether or not the player is moving along the x-axis, for help rendering trailing stamps.
     private bool canStamp;                    // Whether or not the player can render stamps from moving and jumping.
@@ -24,6 +24,17 @@ public class PlayerController : MonoBehaviour {
     private JumpStamper jumpStampRenderer;
     private Animator animator;
     private Rigidbody2D rigidBody;
+
+    // Properties.
+    private bool isGrounded
+    {
+        get { return _isGrounded; }
+        set
+        {
+            animator.SetBool("isGrounded", value);
+            _isGrounded = value;
+        }
+    }
 
     // Use this for initialization
     void Start ()
