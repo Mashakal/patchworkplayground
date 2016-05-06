@@ -8,6 +8,7 @@ public class UserInput : MonoBehaviour {
     private KeyCode actionKey = KeyCode.UpArrow;    // The action key.
     private KeyCode pauseKey = KeyCode.Escape;      // The pause/menu key.
     private KeyCode levelKey = KeyCode.L;           // Loads the next level immediately.
+    private KeyCode captureScreen = KeyCode.C;      // Capture a screen shot button, for development.
 
     // References.
     private PlayerController pController;
@@ -31,10 +32,11 @@ public class UserInput : MonoBehaviour {
 	private void Update ()
     {
         // Look for a jump button press.
-        if (!jump)
-        {
-            jump = Input.GetKeyDown(KeyCode.Space);
-        }
+        //if (!jump)
+        //{
+        //    jump = Input.GetKeyDown(KeyCode.Space);
+        //}
+        jump = jump ? jump : Input.GetKeyDown(KeyCode.Space);
 
         if (Input.GetKeyDown(pauseKey))
         {
@@ -64,6 +66,9 @@ public class UserInput : MonoBehaviour {
             {
                 gameController.LoadNextLevel();
                 return;
+            } else if (Input.GetKeyDown(captureScreen))
+            {
+                gameController.TakeScreenshot(1);
             }
 
             // Pass all input parameters to the player controller.
