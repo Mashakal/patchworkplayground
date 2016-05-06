@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using System.Text.RegularExpressions;
+using System.IO;
 
 public class GameController : MonoBehaviour
 {
@@ -21,7 +24,6 @@ public class GameController : MonoBehaviour
     // References.
     public HUDController hudController;
     public FillPatternController patternController;
-
 
     // Use this for initialization
     void Start()
@@ -64,5 +66,20 @@ public class GameController : MonoBehaviour
     {
         currentLevel = pLevel;
         SceneManager.LoadScene(currentLevel);
+    }
+
+
+    // Take a generic screenshot.
+    public void TakeScreenshot(int pSuperSize)
+    {
+        Debug.Log("TakeScreenshot was called.");
+        // Determine the filename, based on the current date and time.
+        string filename = DateTime.Now.ToString();
+        // Remove spaces and colons from the filename.
+        string pattern = "[' '|:|/]";
+        filename = Regex.Replace(filename, pattern, "");
+        // Make sure the screenshots are saved in the screenshots folder.
+        filename = Path.GetFullPath("Screenshots/") + (filename + ".png");
+        Application.CaptureScreenshot(filename);
     }
 }
