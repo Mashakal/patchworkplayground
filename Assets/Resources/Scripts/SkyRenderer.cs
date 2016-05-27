@@ -8,8 +8,8 @@ public class SkyRenderer : MonoBehaviour {
 
     public int tilesPerRow = 75;
     public int numRows = 3;
-    public float width = 6.12f;
-    public float height = 5.12f;
+    //public float width = 6.12f;
+    //public float height = 5.12f;
     public float minOpacity = 0.7f;
     public float maxOpacity = 1f;
 
@@ -33,6 +33,8 @@ public class SkyRenderer : MonoBehaviour {
 
     private void DrawSky()
     {
+		float width;
+		float height;
         GameObject newSkyTile;
 
         // For every row.
@@ -47,6 +49,8 @@ public class SkyRenderer : MonoBehaviour {
                 // Determine a random opacity between min and max.
                 SpriteRenderer spriteRend = newSkyTile.GetComponent<SpriteRenderer>();
                 Color spriteColor = newSkyTile.GetComponent<SpriteRenderer>().color;
+				width = (float)spriteRend.bounds.size.x;
+				height = (float)spriteRend.bounds.size.y;
                 spriteColor.a = GetRandomOpacity();
                 spriteRend.color = spriteColor;
 
@@ -54,10 +58,10 @@ public class SkyRenderer : MonoBehaviour {
                 newSkyTile.transform.position = new Vector3(startPosition.x + (width * j), startPosition.y + (height * i), 1);
 
                 // Set the parent.
-                newSkyTile.transform.parent = skyAnchor.transform.parent;
+				newSkyTile.transform.SetParent(skyAnchor.transform.parent, false);
 
                 // Randomly flip the sprite.
-                newSkyTile.transform.localScale = FlipSprite(Mathf.Round(Random.value), Mathf.Round(Random.value));
+				newSkyTile.transform.localScale = FlipSprite(newSkyTile.transform.localScale, Mathf.Round(Random.value), Mathf.Round(Random.value));
             }
         }
     }
@@ -96,14 +100,13 @@ public class SkyRenderer : MonoBehaviour {
                 newTile = Instantiate(sky1);
             }
         }
-
         return newTile;
     }
 
 
-    private Vector3 FlipSprite(float x, float y)
+    private Vector3 FlipSprite(Vector3 localScale, float x, float y)
     {
-        Vector3 theScale = transform.localScale;
+        Vector3 theScale = localScale;
 
         if (x == 1)
         {
