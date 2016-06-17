@@ -13,6 +13,7 @@ public class TrailingStamps : Stamper {
     private string currentStyle;            // The string representation of the currently rendered trailing stamp.
     private float[] possibleDeltaValues;    // Possible vertical offsets, determined by the current stamp type.
     private float[] possibleScaleValues;    // Possible multipliers to change the scale of the sprite that may be rendered.
+	private Color[] possibleColorValues; 	// Possible colors for the stamps to be TODO: Probably we should use palette swapping instead at some point
 
     // Paths.
     private string trailingStampsPath = "Prefabs/TrailingStamps/";
@@ -55,10 +56,13 @@ public class TrailingStamps : Stamper {
         if (currentStyle != null && !currentStyle.Equals("Brick"))
         {
             // Check if there is another stamp within this vacinity, returns false if there is no stamp in the vacinity.
-            if (!SearchVacinityForStamp(stampTag, targetPosition))
+            if (!SearchVacinityForStamp(stampTag, targetPosition, 0.6f))
             {
                 // Instantiate a new Sprite object.
                 newSprite = Instantiate(trailingStamp);
+				randomIndex = (int)(UnityEngine.Random.value * possibleColorValues.Length);
+				newSprite.GetComponent<SpriteRenderer>().color = possibleColorValues[randomIndex];
+
 
                 // Change its position.
                 newSprite.transform.position = targetPosition;
@@ -89,6 +93,7 @@ public class TrailingStamps : Stamper {
                 trailingStamp = Resources.Load(trailingStampsPath + trailingGrass) as GameObject;
                 possibleDeltaValues = new float[] { 0f, 0.05f, 0.1f, 0.15f, 0.2f, 0.25f };
                 possibleScaleValues = new float[] { 0.85f, 0.9f, 0.95f, 1.0f, 1.05f, 1.1f, 1.15f, 1.2f, 1.25f, 1.3f };
+				possibleColorValues = ColorLibrary.FlowerColors();
             }
             else if (pName.Contains("Brick"))
             {
@@ -96,6 +101,7 @@ public class TrailingStamps : Stamper {
                 trailingStamp = Resources.Load(trailingStampsPath + trailingBrick) as GameObject;
                 possibleDeltaValues = new float[] { 0 };
                 possibleScaleValues = new float[] { 0 };
+				possibleColorValues = new Color[] { Color.red, Color.green, Color.black};
             }
             else if (pName.Contains("Wood"))
             {
@@ -103,6 +109,7 @@ public class TrailingStamps : Stamper {
                 trailingStamp = Resources.Load(trailingStampsPath + trailingWood) as GameObject;
                 possibleDeltaValues = new float[] { 0 };
                 possibleScaleValues = new float[] { 0.85f, 0.9f, 0.95f, 1.0f, 1.05f, 1.1f, 1.15f, 1.2f, 1.25f, 1.3f };
+				possibleColorValues = ColorLibrary.LeafColors ();
             }
         }
     }

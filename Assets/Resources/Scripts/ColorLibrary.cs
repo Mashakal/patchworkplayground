@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 public static class ColorLibrary {
 
@@ -23,5 +24,20 @@ public static class ColorLibrary {
     {
         return new Color[] { greenYellow, healthyGreen };
     }
+
+	public static Color[] FlowerColors()
+	{
+		int numColors = 20;
+		Color[] flowerColors = new Color[numColors];
+
+		for (int i = 0; i < numColors; i++) {
+			float hue = (((UnityEngine.Random.value * 90)-30) % 360) / 360.0f;
+			float saturation = (UnityEngine.Random.value * 0.4f) + 0.6f;
+			float value = (UnityEngine.Random.value * 0.1f) + 0.9f;
+			flowerColors [i] = Color.HSVToRGB (hue, saturation, value);
+		}
+
+		return flowerColors;
+	}
 
 }

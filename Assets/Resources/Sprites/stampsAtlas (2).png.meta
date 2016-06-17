@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: f09ffe7712a114e068a93aa42e286c38
+timeCreated: 1466181305
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: flower
+    21300002: tree
+    21300004: bridge
+    21300006: statue
+    21300008: leaf
+    21300010: nest
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 175
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: flower
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 788
+        width: 209
+        height: 218
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.499962, y: -109}
+        - {x: 52.49996, y: -109}
+        - {x: 104.49996, y: -56}
+        - {x: 104.49996, y: 82}
+        - {x: 71.49996, y: 109}
+        - {x: -30.500038, y: 109}
+        - {x: -34.50004, y: 96}
+        - {x: -34.50004, y: 86}
+        - {x: -59.50004, y: 103}
+        - {x: -104.50004, y: 99}
+        - {x: -104.50004, y: -109}
+        - {x: -7.500038, y: -109}
+        - {x: -4.500038, y: -93}
+        - {x: -3.5000381, y: -81}
+        - {x: 2.4999619, y: -96}
+    - name: tree
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 769
+        width: 192
+        height: 239
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 66}
+        - {x: 40, y: 63}
+        - {x: 49, y: 59}
+        - {x: 52, y: 55}
+        - {x: 85, y: 59}
+        - {x: 94, y: 72}
+        - {x: 96, y: 79}
+        - {x: 96, y: 99}
+        - {x: 89, y: 104}
+        - {x: 96, y: 142}
+        - {x: 96, y: 183}
+        - {x: 94, y: 202}
+        - {x: 61, y: 239}
+        - {x: -35, y: 239}
+        - {x: -43, y: 211}
+        - {x: -40, y: 198}
+        - {x: -37, y: 193}
+        - {x: -57, y: 214}
+        - {x: -68, y: 222}
+        - {x: -83, y: 225}
+        - {x: -96, y: 221}
+        - {x: -96, y: 201}
+        - {x: -60, y: 150}
+        - {x: -34, y: 159}
+        - {x: -27, y: 165}
+        - {x: -26, y: 173}
+        - {x: -26, y: 150}
+        - {x: -56, y: 150}
+        - {x: -64, y: 143}
+        - {x: -96, y: 122}
+        - {x: -96, y: 96}
+        - {x: -84, y: 91}
+        - {x: -74, y: 89}
+        - {x: -51, y: 65}
+        - {x: -45, y: 63}
+        - {x: -36, y: 64}
+        - {x: -34, y: 66}
+        - {x: -31, y: 68}
+        - {x: -22, y: 76}
+        - {x: -18, y: 85}
+        - {x: -16, y: 92}
+        - {x: -12, y: 107}
+        - {x: -19, y: 105}
+        - {x: -4, y: 106}
+        - {x: -15, y: 83}
+        - {x: -35, y: 63}
+        - {x: -44, y: 51}
+        - {x: -39, y: 4}
+        - {x: -34, y: 0}
+        - {x: 20, y: 0}
+        - {x: 25, y: 1}
+        - {x: 53, y: 39}
+        - {x: 49, y: 54}
+        - {x: 45, y: 60}
+    - name: bridge
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 255
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0059643555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -127.5, y: 55.403564}
+        - {x: -89.5, y: -0.59643555}
+        - {x: 79.5, y: -0.59643555}
+        - {x: 127.5, y: 57.403564}
+        - {x: 127.5, y: 80.403564}
+        - {x: -127.5, y: 80.403564}
+      - - {x: -127.5, y: 99.403564}
+        - {x: -127.5, y: 81.403564}
+        - {x: 119.5, y: 81.403564}
+        - {x: 127.5, y: 83.403564}
+        - {x: 127.5, y: 99.403564}
+    - name: statue
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 767
+        width: 169
+        height: 234
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 208}
+        - {x: -42.5, y: 205}
+        - {x: -42.5, y: 204}
+        - {x: -37.5, y: 210}
+        - {x: -29.5, y: 218}
+        - {x: -34.5, y: 234}
+        - {x: -78.5, y: 234}
+        - {x: -84.5, y: 147}
+        - {x: -84.5, y: 0}
+        - {x: 84.5, y: 0}
+        - {x: 84.5, y: 158}
+        - {x: 37.5, y: 214}
+    - name: leaf
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 518
+        width: 184
+        height: 246
+      alignment: 9
+      pivot: {x: 0.51627266, y: 0.054770865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.994171, y: -2.4736328}
+        - {x: -27.994171, y: -7.473633}
+        - {x: -24.994171, y: -13.473633}
+        - {x: 18.005829, y: -13.473633}
+        - {x: 89.00583, y: 40.526367}
+        - {x: 89.00583, y: 137.52637}
+        - {x: 37.00583, y: 232.52637}
+        - {x: -26.994171, y: 232.52637}
+        - {x: -79.99417, y: 183.52637}
+        - {x: -94.99417, y: 146.52637}
+        - {x: -94.99417, y: 60.526367}
+        - {x: -58.99417, y: -13.473633}
+        - {x: -31.994171, y: -13.473633}
+        - {x: -27.994171, y: -11.473633}
+        - {x: -27.994171, y: 3.5263672}
+        - {x: -26.994171, y: 4.526367}
+    - name: nest
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 513
+        width: 251
+        height: 219
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.08203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109.49994, y: 86.03516}
+        - {x: 124.49994, y: 157.03516}
+        - {x: 116.49994, y: 181.03516}
+        - {x: 50.49994, y: 201.03516}
+        - {x: -0.50006104, y: 201.03516}
+        - {x: -2.500061, y: 200.03516}
+        - {x: -34.50006, y: 170.03516}
+        - {x: -30.500061, y: 156.03516}
+        - {x: -93.50006, y: 125.03516}
+        - {x: -125.50006, y: 58.035156}
+        - {x: -125.50006, y: -5.9648438}
+        - {x: -122.50006, y: -17.964844}
+        - {x: 105.49994, y: -17.964844}
+        - {x: 125.49994, y: -11.964844}
+        - {x: 125.49994, y: 74.03516}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
