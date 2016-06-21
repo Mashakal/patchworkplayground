@@ -72,6 +72,12 @@ public class TrailingStamps : Stamper {
                 scaleMultiplier = possibleScaleValues[randomIndex];
                 newSprite.transform.localScale *= scaleMultiplier;
 
+				// Determine a random rotation
+				float rot = UnityEngine.Random.value * 10.0f;
+				float tiltAroundZ = Input.GetAxis("Horizontal") * rot;
+				Quaternion target = Quaternion.Euler(0, 0, tiltAroundZ);
+				newSprite.transform.rotation = Quaternion.Slerp(transform.rotation, target, 0.0f);
+
                 // Admin.
                 newSprite.tag = stampTag;
                 newSprite.transform.parent = stampContainer.transform;
