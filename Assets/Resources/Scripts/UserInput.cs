@@ -6,6 +6,7 @@ public class UserInput : MonoBehaviour {
 
     // Significant keys.
     private KeyCode actionKey = KeyCode.UpArrow;    // The action key.
+	private KeyCode cycleKey = KeyCode.DownArrow; 	// The cycle colors key (for now)
     private KeyCode pauseKey = KeyCode.Escape;      // The pause/menu key.
     private KeyCode levelKey = KeyCode.L;           // Loads the next level immediately.
     private KeyCode captureScreen = KeyCode.C;      // Capture a screen shot button, for development.
@@ -14,6 +15,7 @@ public class UserInput : MonoBehaviour {
     private PlayerController pController;
     private GameController gameController;
     private PauseMenu pauseController;
+	private FillPatternController fillController;
     
     // Private variables.
     private bool jump;
@@ -25,6 +27,7 @@ public class UserInput : MonoBehaviour {
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
         pauseController = GameObject.Find("PauseMenu").GetComponent<PauseMenu>();
         pController = GetComponent<PlayerController>();
+		fillController = GameObject.Find ("PatternController").GetComponent<FillPatternController> ();
     }
 
 	
@@ -43,6 +46,9 @@ public class UserInput : MonoBehaviour {
             gameController.ChangePauseState();
         }
 
+		if (Input.GetKeyUp (cycleKey)) {
+			fillController.CycleColor ();
+		}
         if (GameController.GameState.Paused == gameController.state)
         {
             GetPlayerPauseInput();

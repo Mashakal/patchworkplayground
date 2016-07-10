@@ -49,6 +49,8 @@ public class JumpStamper : Stamper {
             newSprite.tag = stampTag;
             // Make it a child of the container GameObject.
             newSprite.transform.parent = stampContainer.transform;
+			//Change the sorting order so it's drawn on top
+			newSprite.GetComponent<SpriteRenderer>().sortingOrder = 5;
             // Add the sprite to the tracking array.
             allStamps = AddSprite(newSprite, allStamps, stampIndex);
             // Increment the stampIndex

@@ -46,8 +46,8 @@ public class TrailingStamps : Stamper {
         GameObject newSprite;                   // The GameObject that will carry the sprite.        
 
         // Extract a delta value for this stamp rendering, an offset along the y-axis of the player.
-		randomIndex = 1; //(int)(UnityEngine.Random.value * possibleDeltaValues.Length);
-		yDelta = 0; //possibleDeltaValues[randomIndex];
+		randomIndex = (int)(UnityEngine.Random.value * possibleDeltaValues.Length);
+		yDelta = possibleDeltaValues[randomIndex];
 
         // Use the character's GroundCheck to determine where to position this Sprite, using yDelta as an offset for the y-axis.
         targetPosition = new Vector2(pTargetPosition.x, pTargetPosition.y + yDelta);
@@ -98,7 +98,11 @@ public class TrailingStamps : Stamper {
                 currentStyle = "Grass";
                 trailingStamp = Resources.Load(trailingStampsPath + trailingGrass) as GameObject;
                 possibleDeltaValues = new float[] { 0f, 0.05f, 0.1f, 0.15f, 0.2f, 0.25f };
-                possibleScaleValues = new float[] { 0.85f, 0.9f, 0.95f, 1.0f, 1.05f, 1.1f, 1.15f, 1.2f, 1.25f, 1.3f };
+				possibleScaleValues = new float[15];
+				for (int i=0; i<possibleScaleValues.Length; i++)
+				{
+					possibleScaleValues[i] = (UnityEngine.Random.value * .75f) + 0.75f;
+				}
 				possibleColorValues = ColorLibrary.FlowerColors();
             }
             else if (pName.Contains("Brick"))
@@ -114,7 +118,11 @@ public class TrailingStamps : Stamper {
                 currentStyle = "Wood";
                 trailingStamp = Resources.Load(trailingStampsPath + trailingWood) as GameObject;
                 possibleDeltaValues = new float[] { 0 };
-                possibleScaleValues = new float[] { 0.85f, 0.9f, 0.95f, 1.0f, 1.05f, 1.1f, 1.15f, 1.2f, 1.25f, 1.3f };
+				possibleScaleValues = new float[15];
+				for (int i=0; i<possibleScaleValues.Length; i++)
+				{
+					possibleScaleValues[i] = (UnityEngine.Random.value * .75f) + 0.75f;
+				}
 				possibleColorValues = ColorLibrary.LeafColors ();
             }
         }

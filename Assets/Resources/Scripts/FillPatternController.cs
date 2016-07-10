@@ -5,7 +5,7 @@ public class FillPatternController : MonoBehaviour {
 
     // Public variables.
     public GameObject blankStamp;             // Defined only when the player is standing on a blank stamp that can be filled.
-
+	public int currentFillIndex = 0;
     // Private variables.
     private List<GameObject> allPatterns;     // Holds every pattern the player has obtained.
     private GameObject fillPattern;           // The current pattern to be used for filling in stamps.
@@ -28,15 +28,20 @@ public class FillPatternController : MonoBehaviour {
     {
         allPatterns.Add(pPattern);
 
-        // If there is no equipped pattern, equip this one.
-        if (allPatterns.Count == 1)
-        {
-            fillPattern = pPattern;
-        }
+		// update to newest color
+		fillPattern = pPattern;
+		currentFillIndex = allPatterns.Count - 1;
 
         pPattern.SetActive(false);
     }
 
+	public void CycleColor()
+	{
+		if (allPatterns.Count > 0) {
+			currentFillIndex = (currentFillIndex + 1) % allPatterns.Count;
+			fillPattern = allPatterns [currentFillIndex];
+		}
+	}
 
     // Fills in the current blank stamp, should only be called when the player is in front of a blank stamp.
     public void FillBlankStamp()
