@@ -46,8 +46,8 @@ public class TrailingStamps : Stamper {
         GameObject newSprite;                   // The GameObject that will carry the sprite.        
 
         // Extract a delta value for this stamp rendering, an offset along the y-axis of the player.
-        randomIndex = (int)(UnityEngine.Random.value * possibleDeltaValues.Length);
-        yDelta = possibleDeltaValues[randomIndex];
+		randomIndex = 1; //(int)(UnityEngine.Random.value * possibleDeltaValues.Length);
+		yDelta = 0; //possibleDeltaValues[randomIndex];
 
         // Use the character's GroundCheck to determine where to position this Sprite, using yDelta as an offset for the y-axis.
         targetPosition = new Vector2(pTargetPosition.x, pTargetPosition.y + yDelta);
