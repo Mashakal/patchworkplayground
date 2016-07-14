@@ -70,7 +70,8 @@ public class PlayerController : MonoBehaviour {
                     jumpStampRenderer.Set(colliders[i].name);
                 }
                 // Update the value of isGrounded to reflect the appropriate state.
-                isGrounded = true;
+				if (rigidBody.velocity.y == 0)
+	                isGrounded = true;
                 return;
             }
         }

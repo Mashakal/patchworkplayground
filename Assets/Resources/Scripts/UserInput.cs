@@ -16,9 +16,11 @@ public class UserInput : MonoBehaviour {
     private GameController gameController;
     private PauseMenu pauseController;
 	private FillPatternController fillController;
+	private ArduinoController arduinoController;
     
     // Private variables.
     private bool jump;
+	private bool cyclePrev = false;
 
 
     private void Awake()
@@ -28,6 +30,7 @@ public class UserInput : MonoBehaviour {
         pauseController = GameObject.Find("PauseMenu").GetComponent<PauseMenu>();
         pController = GetComponent<PlayerController>();
 		fillController = GameObject.Find ("PatternController").GetComponent<FillPatternController> ();
+		arduinoController = GameObject.Find ("ArduinoLogic").GetComponent<ArduinoController> ();
     }
 
 	
@@ -39,15 +42,17 @@ public class UserInput : MonoBehaviour {
         //{
         //    jump = Input.GetKeyDown(KeyCode.Space);
         //}
-        jump = jump ? jump : Input.GetKeyDown(KeyCode.Space);
 
         if (Input.GetKeyDown(pauseKey))
         {
             gameController.ChangePauseState();
         }
 
-		if (Input.GetKeyUp (cycleKey)) {
+		if ((Input.GetKey (cycleKey) || arduinoController.down) && cyclePrev == false) {
 			fillController.CycleColor ();
+			cyclePrev = true;
+		} else if (!Input.GetKey (cycleKey) && !arduinoController.down) {
+			cyclePrev = false;
 		}
         if (GameController.GameState.Paused == gameController.state)
         {
@@ -61,11 +66,19 @@ public class UserInput : MonoBehaviour {
     {
         if (GameController.GameState.Playing == gameController.state)
         {
+			jump = (Input.GetKeyDown(KeyCode.Space) || arduinoController.special);
+
             // Get the horizontal movement.
             float hMove = Input.GetAxis("Horizontal");
+			if (arduinoController.left) {
+				hMove = hMove - 1;
+			}
+			if (arduinoController.right) {
+				hMove = hMove + 1;
+			}
 
             // Look for the action button.
-            bool action = Input.GetKeyDown(actionKey);
+			bool action = Input.GetKeyDown(actionKey) || arduinoController.up;
 
             // Look for Load the next level action.
             if (Input.GetKeyDown(levelKey))
