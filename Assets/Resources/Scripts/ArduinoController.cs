@@ -43,6 +43,8 @@ public class ArduinoController : MonoBehaviour {
 		int leftValue = arduino.analogRead(3);
 		int specialValue = arduino.analogRead(4);
 
+		Debug.Log ("Up: " + upValue + "   Right: " + rightValue + "   Down: " + downValue + "   Left: " + leftValue + "   Jump: " + specialValue);
+
 		if (upValue > threshold)
 			up = true;
 		else
