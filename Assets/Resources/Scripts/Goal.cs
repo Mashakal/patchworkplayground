@@ -12,7 +12,10 @@ public class Goal: MonoBehaviour {
     private FillPatternController fillController;
 
     // Properties.
-    public bool IsActive { get { return isActive; } }
+    public bool IsActive { 
+		get { return isActive; } 
+		set { isActive = value; }
+	}
 
 	// Use this for initialization
 	void Start ()

@@ -66,7 +66,7 @@ public class UserInput : MonoBehaviour {
     {
         if (GameController.GameState.Playing == gameController.state)
         {
-			jump = (Input.GetKeyDown(KeyCode.Space) || arduinoController.special);
+			jump = (Input.GetKey(KeyCode.Space) || arduinoController.special);
 
             // Get the horizontal movement.
             float hMove = Input.GetAxis("Horizontal");
@@ -83,7 +83,7 @@ public class UserInput : MonoBehaviour {
             // Look for Load the next level action.
             if (Input.GetKeyDown(levelKey))
             {
-                gameController.LoadNextLevel();
+                gameController.LoadLevel(1);
                 return;
             } else if (Input.GetKeyDown(captureScreen))
             {

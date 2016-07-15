@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -24,9 +25,10 @@ public class PlayerController : MonoBehaviour {
     private JumpStamper jumpStampRenderer;
     private Animator animator;
     private Rigidbody2D rigidBody;
+	private int jumpCounter = 0;
 
     // Properties.
-    private bool isGrounded
+	private bool isGrounded
     {
         get { return _isGrounded; }
         set
@@ -70,8 +72,9 @@ public class PlayerController : MonoBehaviour {
                     jumpStampRenderer.Set(colliders[i].name);
                 }
                 // Update the value of isGrounded to reflect the appropriate state.
-				if (rigidBody.velocity.y == 0)
-	                isGrounded = true;
+				if (rigidBody.velocity.y == 0) {
+					isGrounded = true;
+				}
                 return;
             }
         }
@@ -103,19 +106,17 @@ public class PlayerController : MonoBehaviour {
             }
 
             // Check for jump conditions.
-            if (pShouldJump && isGrounded)
-            {
-                // Add the jump force.
-                rigidBody.AddForce(new Vector2(0, jumpForce));
-                isGrounded = false;
+			if (pShouldJump && isGrounded) {
+				Debug.Log ("jumping! " + jumpCounter++ );
+				// Add the jump force.
+				rigidBody.AddForce (new Vector2 (0, jumpForce));
+				isGrounded = false;
 
-                // Render a jump stamp if allowed.
-                if (canStamp)
-                {
-                    jumpStampRenderer.Stamp(groundCheck.position);
-                }
-            }
-
+				// Render a jump stamp if allowed.
+				if (canStamp) {
+					jumpStampRenderer.Stamp (groundCheck.position);
+				}
+			} 
             // Check if conditions for rendering a trailing stamp are met.
             if (isGrounded && isMoving)
             {
@@ -137,12 +138,12 @@ public class PlayerController : MonoBehaviour {
                     gameController.patternController.FillBlankStamp();
                 }
 
-                // Check for entering the goal, ending the level.
-                if (isInActiveGoal)
-                {
-                    Reset();
-                    gameController.LoadNextLevel();
-                }
+//                // Check for entering the goal, ending the level.
+//                if (isInActiveGoal)
+//                {
+//                    Reset();
+//                    gameController.LoadNextLevel();
+//                }
             }
         }
     }
@@ -204,10 +205,11 @@ public class PlayerController : MonoBehaviour {
         // Check for having entered the goal.
         if (other.name.Equals("Goal"))
         {
-            if (other.GetComponent<Goal>().IsActive)
-            {
-                isInActiveGoal = true;
-            }
+			if (other.GetComponent<Goal> ().IsActive) {
+				other.GetComponent<Goal> ().IsActive = false;
+				Reset ();
+				gameController.LoadLevel (1);
+			}
         }
     }
 

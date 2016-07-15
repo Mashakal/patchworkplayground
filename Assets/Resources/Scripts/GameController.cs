@@ -65,7 +65,8 @@ public class GameController : MonoBehaviour
     public void LoadLevel(int pLevel)
     {
         currentLevel = pLevel;
-        SceneManager.LoadScene(currentLevel);
+		int scene = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
 
 
